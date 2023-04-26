@@ -1,25 +1,84 @@
 .group-material-didatico{
     background: #F5F5F5;;
     display: flex;
+    flex-direction: column;
     max-width: 100vw;
     width: 100%;
     height: 100vh;
     
+    
 
     .div-banner{
+        background-color: black;
         display: flex;
-        max-width: 100vw;
-        width: 100%;
-        padding: 0 3rem;
-        align-items: flex-start;
+        max-width: 90vw;
+        width: 90%;
+        height: 50%;
+        align-items: center;
         justify-content: center;
-        margin-top: 6rem;
+        margin-top: 5rem;
+        margin-right: auto;
+        margin-left: auto;
         
         
         .banner{
            width: 100%;
-           object-fit: contain;
+           max-width: 100%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+            justify-content: center;
+            object-fit: cover;
+         
+          
         }
 
+        @media (max-width: 768px) {
+            .banner {
+              width: 90%;
+            }
+          }
+
+    }
+
+
+
+    .div-carrossel{
+        background-color:#FFFFFF;
+        display: flex;
+        max-width: 90vw;
+        width: 90%;
+        height: 40%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 3rem;
+        margin-right: auto;
+        margin-left: auto;
+        
+        .texto-carrossel{
+            width: 70%;
+            display: flex;
+            justify-content: flex-start;
+            margin-right: auto;
+            padding-left: 5rem;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #7183A6;
+
+            background: #E4EBFB;
+            border-radius: 500px;
+
+
+        }
+
+        @media (max-width: 768px) {
+            .texto-carrossel {
+              width: 90%;
+            }
+          }
     }
 }
+
