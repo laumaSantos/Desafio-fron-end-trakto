@@ -1,10 +1,11 @@
-.active {
+.black {
     background: #252323;
   }
   
-  .inactive {
+.white {
     background: #FFFFFF
-  }
+}
+
 .navbar-site{
     display: flex;
     height: 70px;
@@ -17,9 +18,27 @@
         height: 56px;
         width: 120px;
         margin: 8rem;
-        
     };
-
+    
+    .text-color-blue{
+      color: #7183A6;      
+    }
+    .text-color-white{
+      color: #E4EBFB;
+    }
+    
+    .ambiente-button{
+      background-color: transparent;
+      border: 1px solid #7183A6;
+      padding: 8px 16px;
+      border-radius: 8px;
+      color: #7183A6;      
+    }
+    .ambiente-button:hover{
+      cursor: pointer;
+      filter: brightness(0.8);
+      transition: filter 0.3s;
+    }
 
     .grupo-usuario-sair{
         margin-left: auto;
@@ -33,7 +52,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
         };
 
         p{
@@ -42,7 +60,6 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 21px;
-            color: #E4EBFB;
             margin-left: 0.5rem;
         }
     

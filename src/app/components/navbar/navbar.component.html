@@ -1,8 +1,9 @@
-<div class="navbar-site" [ngClass]="{'active': isActive, 'inactive': !isActive}">
+<div class="navbar-site" [ngClass]="{'black': currentPath === 'main', 'white': currentPath !== 'main'}">
     <div class="logo">
-        <img src="assets/logo-navbar.svg" alt="logo-navbar">
+        <img [src]="logoUrl" alt="logo-navbar">
     </div>
-    <div class="grupo-usuario-sair">
+    <button *ngIf="showButton" class="ambiente-button">Trocar de ambiente</button>
+    <div class="grupo-usuario-sair" [ngClass]="{'text-color-white': currentPath === 'main', 'text-color-blue': currentPath !== 'main'}">
         <div class="data-calendario">
             <img src="assets/calendar.svg" alt="calendar">
             <p>{{ hoje | date:'dd/MM/yyyy' }}</p>
