@@ -37,44 +37,43 @@
           }
     }
 
-
-
     .div-carrossel{
         background-color:#FFFFFF;
         display: flex;
         max-width: 90vw;
         width: 90%;
-        height: 40%;
         align-items: center;
-        justify-content: center;
-        margin-top: 3rem;
+        justify-content: flex-start;
+        margin-top: 2rem;
         margin-right: auto;
         margin-left: auto;
-        
-        .texto-carrossel{
-            width: 70%;
-            display: flex;
-            justify-content: flex-start;
-            margin-right: auto;
-            padding-left: 5rem;
+        padding: 2rem;
+        font-family: 'Roboto';
+        .header-carrossel{
+          display: flex;
+          align-items: center;
+          .texto-carrossel{
+            width: max-content;
+            padding: 4px;
             font-family: 'Roboto';
             font-style: normal;
             font-weight: 500;
-            font-size: 16px;
-            line-height: 19px;
             color: #7183A6;
-
             background: #E4EBFB;
-            border-radius: 500px;
-
-
-        }
-
-        @media (max-width: 768px) {
-            .texto-carrossel {
-              width: 90%;
-            }
+            border-radius: 8px;
+            margin-right: 1rem;
           }
-    }
+          .icon-reverse{
+            margin-left: 1rem;
+            transform: rotate(180deg);
+          }
+        }
+        .carrossel-title{
+          font-weight: bold;
+        }
+        .carrossel-subtitle{
+          color: #7183A6;
+        }
+      }
 }
 
