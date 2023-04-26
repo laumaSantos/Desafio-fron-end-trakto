@@ -1,0 +1,88 @@
+
+.conteudo-Login{
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; //tamanho relativo, não  fixo em px
+    height: 100vh;
+    background: #EFF2F9;
+}
+
+.conteudo-Form{
+    // position: absolute;
+    width: 300px;
+    height: 345px;
+    // left: 810px;
+    // top: 367px;
+
+}
+
+.header-login{
+
+    // height: 23px;
+    // left: 42.19%;
+    // right: 44.27%;
+   
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #04183E;
+}
+
+.label-login{
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 14px;
+
+    color: #04183E;
+}
+
+.input-login{
+    background: #FFFFFF;
+    
+    padding:0.5rem 8rem 1.2rem 0.4rem;
+    
+    border: 1px solid #E4EBFB;
+    border-radius: 4px;
+    margin-top: 0.1rem;
+
+}
+
+.div-password{
+    margin-top: 1.8rem;
+}
+
+.button-submit{
+    background: #1DC763;
+    border-radius: 4px;
+    border-color: #1DC763;
+
+    margin-top: 1.8rem;
+    align-items: center;
+    padding: 16px;
+    gap: 8px;
+
+    // position: absolute;
+    width: 300px;
+    height: 48px;
+    left: 810px;
+    top: 664px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+

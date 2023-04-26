@@ -1,0 +1,19 @@
+<div class="navbar-site" [ngClass]="{'active': isActive, 'inactive': !isActive}">
+    <div class="logo">
+        <img src="assets/logo-navbar.svg" alt="logo-navbar">
+    </div>
+    <div class="grupo-usuario-sair">
+        <div class="data-calendario">
+            <img src="assets/calendar.svg" alt="calendar">
+            <p>{{ hoje | date:'dd/MM/yyyy' }}</p>
+        </div>
+        <div class="notificacao">
+            <img src="assets/line.svg" alt="line">
+            <img src="assets/notification.svg" alt="notification" class="icon-notification">
+            <img src="assets/line.svg" alt="line">
+        </div>
+        <div class="foto-usuario"><img src="assets/avatar.svg" alt="avatar"></div>
+
+        <div class="btn-sair" (click)="sair()"><img src="assets/btn-sair.svg" alt="btn-sair"> </div>
+    </div>
+</div>

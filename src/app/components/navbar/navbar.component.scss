@@ -1,0 +1,75 @@
+.active {
+    background: #252323;
+  }
+  
+  .inactive {
+    background: #FFFFFF
+  }
+.navbar-site{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+   
+    .logo{
+        height: 56px;
+        width: 120px;
+        margin: 8rem;
+        
+    };
+
+
+    .grupo-usuario-sair{
+        margin-left: auto;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .data-calendario{
+            margin-right: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        };
+
+        p{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            color: #E4EBFB;
+            margin-left: 0.5rem;
+        }
+    
+    
+        .notificacao{
+          margin-left: 1rem;
+          margin-right: 2rem;
+          .icon-notification{
+            margin-right: 1rem;
+            margin-left: 1rem;
+          }
+        }
+
+        .foto-usuario{
+            border-radius: 100%;
+        }
+
+        .btn-sair{
+            height: 40px;
+            width: 50px;
+            margin-right:3rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: cursive;
+        }
+    }
+}

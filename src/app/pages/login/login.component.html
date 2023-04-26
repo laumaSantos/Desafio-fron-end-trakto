@@ -1,0 +1,21 @@
+<div class="conteudo-Login">
+    <form class="conteudo-Form" [formGroup]="loginForm" (submit)="submitLogin()">
+        <img src="assets/logo.svg" alt="logo">
+        <p class="header-login">Olá, faça seu login em sua conta.</p>
+        <div>
+            <div> <label class="label-login">E-mail</label></div>           
+            <input class="input-login" placeholder="e-mail" formControlName="email"/>
+        </div>
+       
+        <div class="div-password">
+
+         <label class="label-login">Senha</label>
+           
+            <input class="input-login" placeholder="Senha" type="password" formControlName="senha"/>
+        </div>
+
+        <div>
+            <button type="submit" class="button-submit">Entrar</button>
+        </div>
+    </form>
+</div>
