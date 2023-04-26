@@ -31,4 +31,8 @@ export class NavbarComponent implements OnInit {
     this.router.navigate(["/login"])
   }
 
+  redirectToMain(){
+    this.router.navigate(["/main"]);
+  }
+
 }

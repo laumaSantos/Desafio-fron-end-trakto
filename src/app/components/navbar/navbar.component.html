@@ -2,7 +2,8 @@
     <div class="logo">
         <img [src]="logoUrl" alt="logo-navbar">
     </div>
-    <button *ngIf="showButton" class="ambiente-button">Trocar de ambiente</button>
+    <button *ngIf="showButton" class="ambiente-button" (click)="redirectToMain()">
+        <img src="assets/logout.svg" alt="sair" class="button-icon"/>Trocar de ambiente</button>
     <div class="grupo-usuario-sair" [ngClass]="{'text-color-white': currentPath === 'main', 'text-color-blue': currentPath !== 'main'}">
         <div class="data-calendario">
             <img src="assets/calendar.svg" alt="calendar">

@@ -5,8 +5,7 @@
     max-width: 100vw;
     width: 100%;
     height: 100vh;
-    
-    
+    margin-top: 3rem;
 
     .div-banner{
         background-color: black;
@@ -20,17 +19,15 @@
         margin-right: auto;
         margin-left: auto;
         
-        
         .banner{
-           width: 100%;
-           max-width: 100%;
-           height: 100%;
-           display: flex;
-           align-items: center;
-            justify-content: center;
-            object-fit: cover;
-         
-          
+          width: 100%;
+          max-width: 100%;
+          height: 100%;
+          display: flex;
+          padding: 0 3rem;
+          align-items: center;
+          justify-content: center;
+          object-fit: cover;
         }
 
         @media (max-width: 768px) {
@@ -38,7 +35,6 @@
               width: 90%;
             }
           }
-
     }
 
 
