@@ -3,11 +3,11 @@ import { Router } from '@angular/router';
 import { GetDesignsService } from 'src/service/getDesigns.service';
 
 @Component({
-  selector: 'app-material-didatico',
-  templateUrl: './material-didatico.component.html',
-  styleUrls: ['./material-didatico.component.scss']
+  selector: 'app-list-material-didatico',
+  templateUrl: './list-material-didatico.component.html',
+  styleUrls: ['./list-material-didatico.component.scss']
 })
-export class MaterialDidaticoComponent {
+export class ListMaterialDidaticoComponent {
   constructor(private getDesignsService : GetDesignsService, private router : Router){}
 
   designs!: Array<any>
@@ -27,10 +27,5 @@ export class MaterialDidaticoComponent {
       }
     )
   }
-
-  goList(){
-    this.router.navigate(["/list-material-didatico"]);
-  }
-
 
 }

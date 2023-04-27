@@ -53,6 +53,7 @@
           display: flex;
           align-items: center;
           margin-left: 2rem;
+          margin-right: 2rem;
           .texto-carrossel{
             width: max-content;
             padding: 4px;
@@ -67,6 +68,28 @@
           .icon-reverse{
             transform: rotate(180deg);
             margin: 1rem;
+          }
+
+          .button-ver-conteudo{
+            display: flex;
+            margin-left: auto;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            padding: 0.4rem;
+            
+            color: #4743FF;
+            
+            border: 1px solid #4743FF;
+            background-color: transparent;
+            border-radius: 6px;
+          }
+          .button-ver-conteudo:hover{
+            cursor: pointer;
+            filter: brightness(0.8);
+            transition: filter 0.3s;
           }
         }
         .carrossel-title{

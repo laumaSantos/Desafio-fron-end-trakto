@@ -10,6 +10,7 @@ import { MaterialDidaticoComponent } from './pages/material-didatico/material-di
 import { CommonModule } from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { Interceptor } from './interceptor/interceptor';
+import { ListMaterialDidaticoComponent } from './pages/list-material-didatico/list-material-didatico.component';
 
 const serviceAutentica = [Interceptor]
 @NgModule({
@@ -18,7 +19,8 @@ const serviceAutentica = [Interceptor]
     LoginComponent,
     MainComponent,
     NavbarComponent,
-    MaterialDidaticoComponent
+    MaterialDidaticoComponent,
+    ListMaterialDidaticoComponent
   ],
   imports: [
     BrowserModule,
