@@ -5,15 +5,13 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class LoginService {
+export class GetDesignsService {
   private readonly apiUrl = 'https://api.trakto.io';
 
   constructor(private http: HttpClient) { }
 
-  LoginUser(objeto: any) {
-    return this.http.post<any>
-    (`${this.apiUrl}/auth/signin`, objeto);
+  ListarDesigns() {
+    return this.http.get<any>
+    (`${this.apiUrl}/document`);
   }
 }
-
-

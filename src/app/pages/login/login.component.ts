@@ -1,7 +1,10 @@
+import { Token } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormBuilder, Validators} from '@angular/forms'
 import { Router } from '@angular/router';
 import { LoginModel } from 'src/app/Models/LoginModel';
+import { AutenticaService } from 'src/service/autentica.service';
+import { LoginService } from 'src/service/login.service';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +15,8 @@ export class LoginComponent implements OnInit{
   loginForm!: FormGroup;
 
   constructor( private formbuilder : FormBuilder,
-    private router: Router ) {
+    private router: Router, public loginService: LoginService,
+    private autenticaService : AutenticaService) {
    
   }
 
@@ -20,7 +24,7 @@ export class LoginComponent implements OnInit{
     this.loginForm = this.formbuilder.group(
       {
         email: ['', [Validators.required, Validators.email]],
-        senha: ['', [Validators.required]] 
+        password: ['', [Validators.required]] 
       }
     )
   }
@@ -29,6 +33,19 @@ export class LoginComponent implements OnInit{
     // debugger
     var dadosLogin = this.loginForm.getRawValue() as LoginModel;
     console.log(this.loginForm.value);
-    this.router.navigate(["/main"]);
+    this.loginService.LoginUser(dadosLogin)
+    .subscribe(
+      token =>
+      {
+        var mytoken = token.access_token
+
+        this.autenticaService.DefineToken(mytoken)
+
+        this.router.navigate(["/main"]);
+      },
+      erro => {
+
+      })
+    
   }
 }

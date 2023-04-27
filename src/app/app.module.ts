@@ -8,7 +8,10 @@ import { MainComponent } from './pages/main/main.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MaterialDidaticoComponent } from './pages/material-didatico/material-didatico.component';
 import { CommonModule } from '@angular/common';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
+import { Interceptor } from './interceptor/interceptor';
 
+const serviceAutentica = [Interceptor]
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +24,13 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    serviceAutentica,
+    {provide : HTTP_INTERCEPTORS, useClass : Interceptor, multi : true}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
