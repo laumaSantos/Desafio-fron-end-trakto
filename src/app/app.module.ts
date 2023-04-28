@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { Interceptor } from './interceptor/interceptor';
 import { ListMaterialDidaticoComponent } from './pages/list-material-didatico/list-material-didatico.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 const serviceAutentica = [Interceptor]
 @NgModule({
@@ -27,7 +28,8 @@ const serviceAutentica = [Interceptor]
     AppRoutingModule,
     ReactiveFormsModule,
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    SlickCarouselModule
   ],
   providers: [
     serviceAutentica,

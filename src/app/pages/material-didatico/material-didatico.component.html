@@ -18,7 +18,7 @@
             </div>
             <div class="carrossel-flex">
                 <ng-container *ngFor="let design of designs">
-                    <a [href]="'https://editor.trakto.io/presentation/p/' + design.id" target="_blank">
+                    <a [href]="'https://editor.trakto.io/presentation/p/' + design.id" target="_blank" class="link">
                         <div class="block-design">
                             <img class="image-carrossel" [src]="design.cover.medium"/>
                             <p>
@@ -36,7 +36,7 @@
                 <p class="texto-carrossel">Semana 06/02 até 28/02</p>
                 <img src="assets/arrow.png"/>
                 <img src="assets/arrow.png" class="icon-reverse"/>
-                <button>Ver todo conteúdo</button>
+                <button class="button-ver-conteudo" (click)="goList()">Ver todo conteúdo</button>
             </div>
             <div>
                 <h3 class="carrossel-title">Vídeo aulas</h3>
@@ -44,7 +44,7 @@
             </div>
             <div class="carrossel-flex">
                 <ng-container *ngFor="let design of designs">
-                    <a [href]="'https://editor.trakto.io/presentation/p/' + design.id" target="_blank">
+                    <a [href]="'https://editor.trakto.io/presentation/p/' + design.id" target="_blank" class="link">
                         <div class="block-design">
                             <img class="image-carrossel" [src]="design.cover.medium"/>
                             <p>

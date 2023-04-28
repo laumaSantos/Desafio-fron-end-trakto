@@ -1,23 +1,20 @@
-
+<app-navbar></app-navbar>
 <div class="container">
-    <app-navbar></app-navbar>
-
-    <div class="texto">
-        <h3 class="carrossel-title">Material didático</h3>
-        <p class="carrossel-subtitle">Acesse suas últimas apresentações de aula</p>
-    </div>
     <div class="container-designs">  
-
+        <div class="texto">
+            <h3 class="carrossel-title">Material didático</h3>
+            <p class="carrossel-subtitle">Acesse suas últimas apresentações de aula</p>
+        </div>
     <ng-container *ngFor="let design of designs">
-        <a [href]="'https://editor.trakto.io/presentation/p/' + design.id" target="_blank">
+        <a [href]="'https://editor.trakto.io/presentation/p/' + design.id" target="_blank" class="link">
             <div class="item-container">
-                <img class="image-carrossel-designs" [src]="design.cover.medium"/>
+                <img class="image-carrossel-designs" [src]="design.cover.medium" />
                 <p>
                     {{design.title}}
                 </p>
             </div>
         </a>
     </ng-container>
-    </div>
+
 </div>
 

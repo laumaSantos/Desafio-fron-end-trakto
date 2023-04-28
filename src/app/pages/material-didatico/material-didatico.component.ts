@@ -32,5 +32,12 @@ export class MaterialDidaticoComponent {
     this.router.navigate(["/list-material-didatico"]);
   }
 
+  slideConfig = {
+  "slidesToShow": 4,
+  "slidesToScroll": 1,
+  "dots": true,
+  "infinite": true
+};
+
 
 }
