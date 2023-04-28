@@ -40,8 +40,9 @@
   .div-carrossel {
     background-color: #FFFFFF;
     display: flex;
+    flex-direction: column;
     max-width: 90vw;
-    width: 90%;
+    width: 100%;
     align-items: center;
     justify-content: flex-start;
     margin-top: 2rem;
@@ -53,9 +54,8 @@
     .header-carrossel {
       display: flex;
       align-items: center;
-      margin-left: 2rem;
-      margin-right: 2rem;
-
+      width: 95%;
+      padding: 0 2rem;
       .texto-carrossel {
         width: max-content;
         padding: 4px;
@@ -97,6 +97,10 @@
       }
     }
 
+    .carrossel-session{
+      width: 100%;
+    }
+
     .carrossel-title {
       margin-left: 2rem;
       font-weight: bold;
@@ -109,10 +113,11 @@
 
     .carrossel-flex {
       display: flex;
-      width: 100%;
+      width: 95%;
       justify-content: space-between;
       align-items: flex-end;
       padding: 1rem 2rem;
+      overflow: hidden;
       .link{
         color: #354564;
         text-decoration: none;
